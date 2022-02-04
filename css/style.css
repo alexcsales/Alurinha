@@ -216,8 +216,32 @@ body {
 	outline: none;
 }
 
+.rodapePrincipal-navMap-list {
+	display: flex;
+	flex-flow: column wrap;
+	height: 255px;
+}
+
+.rodapePrincipal-patrocinadores .container {
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+	display:flex;
+	align-items: center;
+	width: 70%;
+	justify-content: space-around;
+}
+
 .rodapePrincipal-contatoForm-legend {
 	margin-bottom: 10px;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+	display: flex;
+	width: 25%;
 }
 
 @media(min-width: 769px) {
@@ -294,5 +318,3 @@ body {
 	}
 
 }
-
-
