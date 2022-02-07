@@ -1,5 +1,5 @@
 body {
-	background-color: #F2F5F7;
+	background: rgb(0, 0, 40);
 	font-family: 'Open Sans',Arial,sans-serif;
 }
 
@@ -9,8 +9,8 @@ body {
 }
 
 .cabecalhoPrincipal {
-	background-color: #FFF;
 	padding: 20px 0;
+	background: linear-gradient(rgb(0, 0, 110),rgb(0, 0, 40));
 }
 
 .cabecalhoPrincipal .container {
@@ -21,14 +21,22 @@ body {
 }
 
 .cabecalhoPrincipal-titulo {
+	color: #FFF;
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 3em;
 	margin-bottom: 20px;
+	transition: 0;
 }
 
 .cabecalhoPrincipal-titulo a {
 	text-decoration: none;
 	color: inherit;
+}
+
+.logo-alura {
+	width: 100px;
+    height: 100px;
+	
 }
 
 .cabecalhoPrincipal-nav {
@@ -38,22 +46,21 @@ body {
 .cabecalhoPrincipal-nav-link {
 	padding: 10px;
 	margin-bottom: 10px;
-	color: #9799A6;
-	background-color: #FFF;
+	color: #FFF;
 	text-decoration: none;
 	transition: .5s;
 	display: block;
-
-	border-bottom: 1px solid #9799A6;
 }
 
 .conteudoPrincipal {
 	margin-top: 20px;
 	margin-bottom: 20px;
+	background: linear-gradient(rgb(0, 0, 40),rgb(0, 0, 110));
 }
 
 .subtitulo {
 	font-weight: bold;
+	color: #FFF;
 	font-size: 32px;
 	margin-bottom: 10px;
 	text-align: center;
@@ -66,13 +73,16 @@ body {
 
 .conteudoPrincipal-cursos-link {
 	height: 100px;
-	background-color: #FFF;
+	background-color: rgb(0, 0, 60);
 	text-align: center;
 	margin: 1%;
 	transition: .3s;
-	box-shadow: 2px 2px 2px #CCC;
+	box-sizing: border-box;
+    border: 1px solid #00b7ff54;
+    border-radius: 10px;
 	position: relative;
-	width: 23%
+	width: 23%;
+	transition: 0.5s;
 }
 
 .conteudoPrincipal-cursos-link:nth-child(4n) {
@@ -84,7 +94,7 @@ body {
 
 .conteudoPrincipal-cursos-link a {
 	text-decoration: none;
-	color: #000;
+	color: #FFF;
 	font-weight: bold;
 	display: block;
 	width: 100%;
@@ -95,7 +105,8 @@ body {
 }
 
 .conteudoPrincipal-cursos-link:hover {
-	box-shadow: 4px 4px 4px #CCC;
+	border-color: #6bd5ff;
+	margin-top: -1px;
 }
 
 .conteudoPrincipal-cursos-link a:before {
@@ -116,7 +127,7 @@ body {
 
 
 .rodapePrincipal {
-	background-color: #324C64;
+	background-color: rgb(0, 0, 40);
 	padding-top: 20px;
 }
 
@@ -154,7 +165,7 @@ body {
 
 .rodapePrincipal-patrocinadores {
 	margin-top: 30px;
-	background: #F2F5F7;
+	background: #FFF;
 	padding: 20px 0;
 }
 
@@ -195,7 +206,7 @@ body {
 }
 
 .videoSobre {
-	background-color: #5E9EDC;
+	background-color: #FFF;
 	padding: 25px 0;
 
 }
@@ -220,6 +231,8 @@ body {
 	flex-direction: column;
 	text-align: center;
 	flex-grow: 2;
+	color:rgb(0, 0, 110);
+	
 }
 
 .videoSobre-sobre-title {
@@ -233,13 +246,17 @@ body {
 
 .videoSobre-button {
 	border-radius: 8px;
-	background-color: #ec6e5a;
+	background-color: #a3ffbf;
 	display: block;
-	color: #FFF;
+	color: rgb(0, 0, 110);
 	border: none;
 	height: 50px;
 	font-size: .8em;
 	outline: none;
+}
+
+.videoSobre-button:hover {
+	cursor: pointer;
 }
 
 .rodapePrincipal-navMap-list {
@@ -340,14 +357,8 @@ body {
 		text-align: left;
 	}
 
-	.cabecalhoPrincipal-nav-link {
-		border-radius: 5px;
-		border: 1px solid #9799A6;
-	}
-
 	.cabecalhoPrincipal-nav-link:hover {
-		color: #FFF;
-		background-color: #9799A6;
+		color: #9799a698;
 	}
 
 	.cabecalhoPrincipal-titulo {
